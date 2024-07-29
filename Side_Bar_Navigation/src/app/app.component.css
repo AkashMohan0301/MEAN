@@ -1,0 +1,99 @@
+.sidebar{
+    position: fixed;
+    background-color: rgb(29, 35, 38);
+    left: -700px;
+    width: 250px;
+    height: 98%;
+    font-size: 20px;
+    border-radius: 8px;
+    font-family:'Franklin Gothic Medium';
+    transition: all 0.5s;
+    margin: 0%;
+}
+.sidebar ul{
+padding-left: 0%;
+
+margin: 0%;
+}
+.sidebar li{
+    padding-left: 15px;
+    padding-top: 9%;
+    list-style: none;
+    height: 40px;
+    border-top: 1px solid rgb(108, 107, 107);
+
+}
+.sidebar li i{
+    padding-right: 10px;
+}
+.sidebar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding-right: 10px;
+}
+.sidebar a:hover {
+    color: rgb(31, 109, 188);
+    transition: 0.1s ease-in;
+    padding-left: 10px;
+}
+.logo_name h3{
+    margin: 0%;
+    padding-top: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: grey;
+    height: 50px;
+    border-top-left-radius:8px ;
+    border-top-right-radius:8px ;   
+    padding-left: 20px;
+}
+.logo_name h3:hover{
+    color: rgb(31, 109, 188);
+    transition: 0.1s ease-in;
+}
+#check
+{
+    display: none;
+}
+label #btn,label #cancel{
+    position: absolute;
+    padding-left: 10px;
+    cursor: pointer;
+    background:black;
+    border-radius: 3px;
+    }
+label #btn{
+    top: 25px;
+    left: 40px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding: 6px 12px;
+    transition: all 0.1s ease;
+}
+label #cancel{
+    z-index: 1111;
+    left: -200px;
+    top:32px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding: 4px 12px;
+    transition: all 0.5s ease;
+}
+#check:checked ~ .sidebar{
+    left: 8px;
+
+}
+#check:checked ~ label #btn{
+    left :260px;
+    opacity : 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left :200px;
+
+
+}
+section{
+    background-color: bisque;
+    color: blue;
+}
