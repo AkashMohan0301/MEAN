@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+      margin: -10px;
+      display: flex;
+      justify-content: center;
+      color: white;
+      font-family: cursive;
+      padding-top: 0px;
+      font-size: 10px;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    margin: 27px 0;
+  }
+  
+  .color-box {
+    margin: 0 5px;
+  }
+  
+  .row-1 .color-box {
+    width: 79px;
+    height: 100px;
+  }
+  
+  .row-2 .color-box {
+    width: 79px;
+    height: 100px;
+  }
+  
+  .row-3 .color-box {
+    width: 79px;
+    height:100px;
+  }
