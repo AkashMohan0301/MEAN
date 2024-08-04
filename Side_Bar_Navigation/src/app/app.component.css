@@ -97,3 +97,15 @@ section{
     background-color: bisque;
     color: blue;
 }
+.main{
+    background-color: bisque;
+    height: 500px;
+    width: 99.5%;
+    border-radius: 10px;
+    transition: 0.1s ease-in-out;
+
+}
+#check:checked ~ .main{
+margin-left: 265px;
+margin-top: 20px
+}
