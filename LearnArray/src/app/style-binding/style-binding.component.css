@@ -1,0 +1,11 @@
+.sample{
+    background-color: rgb(20, 4, 4);
+    height: 1300px;
+    width: 100vw    ;
+    color: rgb(216, 11, 11);
+}
+.bg-red{
+    height: 100px;
+    color: rgb(244, 248, 248);
+    background-color: red;
+}

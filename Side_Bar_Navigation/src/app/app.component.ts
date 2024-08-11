@@ -10,4 +10,10 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Side_Bar_Navigation';
+  constructor(){
+    console.log("Hello!");
+    let Age = 5;
+    console.log(Age);
+
+  }
 }

@@ -1,0 +1,64 @@
+<div class="main-container">
+  <div class="sub-container">
+    <div
+      class="tab"
+      (click)="tabshow()"
+      [ngClass]="{ 'tab-selected': show == true }"
+    >
+      <h3>Add User</h3>
+    </div>
+    <div class="tab" (click)="tabshow2()" [ngClass]="{ 'tab-selected': !show }">
+      <h3>View Users</h3>
+    </div>
+    <div class="content">
+      <div class="tab1-content" *ngIf="show">
+        <table>
+          <tr>
+            <td>Name :</td>
+            <td><input type="text" [(ngModel)]="UserName" /></td>
+          </tr>
+          <tr>
+            <td>Mark :</td>
+            <td><input type="number" [(ngModel)]="Mark" /></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="right">
+              <button (click)="clearValues()">Clear</button
+              ><button (click)="storeUserNameAndMark()">Submit</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="tab2-content" *ngIf="!show">
+        <div>
+          Average Martk = {{average}}
+          <br>
+          <br>
+        </div>
+        <table>
+          <tr>
+            <th>SL No</th>
+            <th>Name</th>
+            <th>Mark</th>
+            <th>Action</th>
+          </tr>
+          <tr *ngFor="let n of names; let y = index" [ngClass]="{'even': y % 2 == 0, 'Odd' : y % 2 !=0}">
+              <td>{{y + 1}}</td>
+              <td>{{ n }}</td>
+              <td [ngClass]="{ 'failed' : (marks[y]<20) , 'passed' : (marks[y] >= 20) , 'super':marks[y]>=40 }">{{ marks[y] }}</td>
+              <td>
+                <img
+                (click)="deleteUser(y)"
+                  src="/assets/6861362.png"
+                  alt=""
+                  height="20px"
+                  style="cursor: pointer"
+                />
+              </td>
+
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
